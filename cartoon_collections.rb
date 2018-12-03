@@ -16,10 +16,13 @@ end
 
 def find_the_cheese(types_of_food)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  common_food = (cheese_types & types_of_food)
-  if common_food != []
-  common_food.join
-  else
-    nil
+  #common_food = (cheese_types & types_of_food)
+  #if common_food != []
+  #common_food.join
+  #else
+    #nil
+  #end
+  types_of_food.find do |maybe_cheese|
+    cheese_types.include?(maybe_cheese)
   end
 end

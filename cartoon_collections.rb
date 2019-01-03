@@ -52,48 +52,25 @@ end
 
 # long_planeteer_calls(calls_long) ## Test Code ##
 
-cheddar_cheese = ["banana", "cheddar", "sock"]
-#no_cheese = ["ham", "cellphone", "computer"]
-cheese_types = ["cheddar", "gouda", "camembert"]
-def find_the_cheese(cheddar_cheese, cheese_types)
-  
-  cheddar_cheese.index { |array_objects| cheese_types.include?(array_objects)}
-  binding.pry
-  puts "true" 
-  
-  # cheddar_cheese.collect |array_objects|
-  #if array_objects == cheese_types.any? |cheeses|
-   # binding.pry
-    #puts "true"
-    #end 
-  
-    # end
-   
-   
-  # cheddar_cheese.include?(cheese_types)
-  # puts "true"
-  
-  
-  #found_cheeses = cheese_types.find_index(cheddar_cheese)
-  #binding.pry
-  #puts found_cheeses
-  
+### TEST CODE ###
 
-find_the_cheese(cheddar_cheese, cheese_types)
+# cheddar_cheese = ["banana", "cheddar", "sock"]
+# no_cheese = ["ham", "cellphone", "computer"]
+# cheese_types = ["cheddar", "gouda", "camembert"]
+
+#________________________________________________________
+
+def find_the_cheese(cheddar_cheese)
+  
+  cheese_detected = cheddar_cheese.detect do |array_objects| 
+    ["cheddar", "gouda", "camembert"].include?(array_objects)
+  end 
+ cheese_detected
+end
+# find_the_cheese(cheddar_cheese) ### Test code @@@
 
 ### TESTS ###
 =begin
 
-  describe "#find_the_cheese" do
-    it "returns the first element of the array that is cheese" do
-      cheddar_cheese = ["banana", "cheddar", "sock"]
-      expect(find_the_cheese(cheddar_cheese)).to eq 'cheddar'
-    end
-
-    it "returns nil if the array does not contain a type of cheese" do
-      no_cheese = ["ham", "cellphone", "computer"]
-      expect(find_the_cheese(no_cheese)).to eq nil
-    end
-  end
-end
+ 
 =end 

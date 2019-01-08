@@ -19,16 +19,23 @@ def long_planeteer_calls(array)
   i = 0 
   values = []
   array.each do |value|
-    values << value.length > 4
+    values << true if value.length > 4
   end
   
   values.any? do |value|
-    value.true 
+    value == true
   end
   
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
+  
   cheese_types = ["cheddar", "gouda", "camembert"]
+  array.each do |value|
+    cheese_types.each do |cheese|
+      return cheese if value == cheese
+    end
+  end
+  nil
+    
 end

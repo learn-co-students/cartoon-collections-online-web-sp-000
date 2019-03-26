@@ -1,5 +1,6 @@
 def roll_call_dwarves(array)# code an argument here
   # Your code here
+
   array.each_with_index {|name,index| puts "#{index+1}.#{name}"}
 end
 
@@ -18,11 +19,6 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find do |word|
-    if word=="cheddar" ||word=="gouda"||word=="camembert"
-      return word
-    else nil
-    end
-  end
+  array.find {|word| word=="cheddar" ||word=="gouda"||word=="camembert"}
 
 end

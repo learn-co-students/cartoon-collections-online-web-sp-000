@@ -8,19 +8,20 @@ def roll_call_dwarves(names)
 end
 
 def summon_captain_planet(array)
-  elements = []
   array.map do |thing|
-    elements<<thing.capitalize + "!"
-    puts elements
+    thing.capitalize + "!"
   end
 end
 
-
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+  if calls.length > 4
+    false
+  else
+    true
+  end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(strings)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  strings.include?{ |strings| strings == cheese_types}
 end

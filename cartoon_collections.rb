@@ -25,6 +25,6 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   #  match = ""
    array.detect do |snack|
-     "#{snack}" == "cheddar" || "#{snack}" == "gouda" || "#{snack}" == "camembert"
+     cheese_types.include?("#{snack}") 
      end
  end

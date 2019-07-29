@@ -4,7 +4,7 @@ short_words = ["puff", "go", "two"]
 assorted_words = ["two", "go", "industrious", "bop"]
 snacks = ["crackers", "gouda", "thyme"]
 soup = ["tomato soup", "cheddar", "oyster crackers", "gouda"]
-
+ingredients = ["garlic", "rosemary", "bread"]
 
 def roll_call_dwarves(array)# code an argument here
   i = 1 
@@ -54,3 +54,4 @@ puts long_planeteer_calls(short_words)
 puts long_planeteer_calls(assorted_words)
 puts find_the_cheese(snacks)
 puts find_the_cheese(soup)
+puts find_the_cheese(ingredients)

@@ -7,17 +7,16 @@ def roll_call_dwarves(names)
 end
 
 def summon_captain_planet(planeteer_calls)
-  ##binding.pry
   planeteer_calls.map do |item| 
-    item.capitalize
-    item.split
-    return "#{item}!" 
+    item.capitalize!
+    "#{item}!" 
   end
 end
 
 def long_planeteer_calls(array)
-  
-  
+  if array.size < 4 
+    return false
+  end
 end
 
 def find_the_cheese# code an argument here

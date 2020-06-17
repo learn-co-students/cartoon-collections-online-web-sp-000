@@ -1,13 +1,34 @@
-def roll_call_dwarves# code an argument here
+dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
+short_words = ["puff", "go", "two"]
+def roll_call_dwarves(dwarves)# code an argument here
   # Your code here
+i = 0
+while i < dwarves.length
+  puts "#{i + 1}. #{dwarves[i]}"
+i += 1
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
-end
+roll_call_dwarves(dwarves)
 
-def long_planeteer_calls# code an argument here
+def summon_captain_planet(array)# code an argument here
   # Your code here
+  call = []
+  i = 0
+  while i < array.length
+    call << array[i].capitalize + "!"
+    i += 1
+ end
+  call
+end
+summon_captain_planet(planeteer_calls)
+
+
+def long_planeteer_calls(short_words)# code an argument here
+  # Your code here
+  assorted_words = ["two", "go", "industrious", "bop"]
+  long_planeteer_calls(assorted words)
 end
 
 def find_the_cheese# code an argument here

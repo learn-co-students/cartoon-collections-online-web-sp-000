@@ -19,9 +19,4 @@ def find_the_cheese(items)
   else
     nil
   end
-    #if item.include?("cheddar")
-    #elsif item.include?("gouda")
-   # else item.include?("camembert")
-  #items.include?(["cheddar", "gouda", "camembert"])
-  #["cheddar", "gouda", "camembert"].include?(items)
 end

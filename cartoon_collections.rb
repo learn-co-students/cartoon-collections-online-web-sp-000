@@ -3,7 +3,7 @@ def roll_call_dwarves(names)
 end
 
 def summon_captain_planet(calls)
-	calls.map {|call| "#{call.capitalize}!"}
+	calls.map {|call| call.capitalize + "!"}
 end
 
 def long_planeteer_calls(calls)
@@ -11,9 +11,7 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(strings)
-	cheese_types = ["cheddar", "gouda", "camembert"]
+	cheese_types = %w[cheddar gouda camembert]
 
-	strings.each {|string| return string if cheese_types.include?(string)}
-
-	nil
+	strings.find {|string| cheese_types.include?(string)}
 end

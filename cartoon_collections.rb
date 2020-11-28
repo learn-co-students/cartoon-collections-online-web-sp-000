@@ -12,8 +12,8 @@ def summon_captain_planet(array)
 value = []
 array.collect do |phrase|
   value << phrase.upcase + "!"
-end
 puts value
+end 
 return value 
 end 
  

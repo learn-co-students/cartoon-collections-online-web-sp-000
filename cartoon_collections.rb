@@ -6,21 +6,18 @@ end
 end 
 
 def summon_captain_planet(array)
-#planateer_calls = ["earth", "wind", "fire", "water", "heart"]
-#veggies = ["carrot", "cucumber", "pepper"]
-#fruits = ["applie", "banana", "orange"]
-value = []
+  value = []
 array.collect do |phrase|
-  value << phrase.upcase + "!"
-puts value
+value << phrase.upcase + "!"
 end 
+puts value
 return value 
 end 
- 
-   
-    # it 'returns an array with the same number of elements that it was given' do
+
+
+# it 'returns an array with the same number of elements that it was given' do
     #   veggies = %w[carrot cucumber pepper]
-    #   result = summon_captain_planet(veggies)
+    #   result = summon_captain_planet(veggies) 
     #   expect(result.class).to eq(Array) 
     #   expect(result.length).to eq(3)
     # end

@@ -7,27 +7,20 @@ end
 
 def summon_captain_planet(array)
   value = []
-array.collect do |phrase|
-value << phrase.upcase + "!"
-end 
-puts value
-return value 
+  array.collect do |phrase|
+  value << phrase.capitalize() + "!"
+  end 
+  return value 
 end 
 
 
-# it 'returns an array with the same number of elements that it was given' do
-    #   veggies = %w[carrot cucumber pepper]
-    #   result = summon_captain_planet(veggies) 
-    #   expect(result.class).to eq(Array) 
-    #   expect(result.length).to eq(3)
-    # end
 
 
 
 def long_planeteer_calls
 # code an argument here
   # Your code here
-end
+  end
 
 def find_the_cheese
 # code an argument here

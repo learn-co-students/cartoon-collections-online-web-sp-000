@@ -23,10 +23,10 @@ def long_planeteer_calls(words)
 
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  str = cheese_types.join(" ")
-  ingredients.each do |element|
-  if element.include?(str) 
-    puts element
-  end 
-end 
-end 
+    ingredients.each do |element|
+    if cheese_types.include? (element)
+       return element 
+   end 
+ end
+ return nil
+end

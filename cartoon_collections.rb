@@ -7,7 +7,7 @@ def roll_call_dwarves(dwarves)
     dwarves.each.with_index(1) do |name, index|
     new_dwarves <<"#{index}. #{name}"
   end
-  puts new_dwarves.join(" ")
+  puts new_dwarves
 end
 
 

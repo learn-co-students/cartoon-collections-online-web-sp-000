@@ -34,7 +34,7 @@ should look like this:
 > 3.  Bashful
 > 4.  Grumpy
 
-Look into the [`each_with_index`](http://ruby-doc.org/core/Enumerable.html#method-i-each_with_index) method.
+Look into the [`_index`](http://ruby-doc.org/core/Enumerable.html#method-i-_index) method.
 
 Once the test for this method is passing, move on to the next method.
 
@@ -120,7 +120,7 @@ value instead of printing it so keep that in mind.
 
 ## Resources
 
-- The [`.each_with_index` method](http://ruby-doc.org/core/Enumerable.html#method-i-each_with_index)
+- The [`._index` method](http://ruby-doc.org/core/Enumerable.html#method-i-_index)
 - The [`.map` method](http://ruby-doc.org/core/Array.html#method-i-map)
 - The [`.include` method](http://ruby-doc.org/core/Array.html#method-i-include-3F)
 

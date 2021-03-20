@@ -3,7 +3,7 @@ tags:
   - iteration
   - map
   - collection
-  - each_with_index
+  - _index
 languages:
   - ruby
 resources: 2

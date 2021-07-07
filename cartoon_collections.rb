@@ -1,16 +1,28 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+require 'pry'
+
+
+def roll_call_dwarves(dwarf_names)
+  dwarf_names.each_with_index {|name, position| puts "#{position + 1}. #{name}" }
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.map! do |calls| calls.capitalize + "!"
+  end
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(assorted_words)
+  assorted_words.any? {|words| true if words.length > 4}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(types_of_food)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  #common_food = (cheese_types & types_of_food)
+  #if common_food != []
+  #common_food.join
+  #else
+    #nil
+  #end
+  types_of_food.find do |maybe_cheese|
+    cheese_types.include?(maybe_cheese)
+  end
 end

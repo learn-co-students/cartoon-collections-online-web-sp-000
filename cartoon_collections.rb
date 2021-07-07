@@ -1,9 +1,13 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(array)
+  array=["Doc", "Dopey", "Bashful", "Grumpy"]
+  .include( "1. Dopey 2. Grumpy 3. Bashful ");
+      });
+});
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
+  .collect["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 end
 
 def long_planeteer_calls# code an argument here
